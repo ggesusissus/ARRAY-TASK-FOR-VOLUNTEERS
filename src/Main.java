@@ -11,9 +11,10 @@ public class Main {
     }
     static void Calculation(int[] tab)
     {
-        int FirstNum = 0,SecondNum = 0;
+        int FirstNum = 0,SecondNum = 0, maxNum = 0;
+
         for (int i = 0; i < tab.length; i++) {
-            for (int j = i + 1; j < tab.length; j++) {
+            for (int j = 0; j < tab.length; j++) {
                 if (tab[j] == -tab[i]) {
                     FirstNum = tab[j];
                     SecondNum = tab[i];
